@@ -6,7 +6,7 @@ export class Categoria {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column()
+    @Column({type:'varchar',length:50})
     nombre: string;
     // Hacer "detalle" nullable para permitir valores nulos
     @Column({ type: 'text', nullable: true })  // Agregamos 'nullable: true' aquí
